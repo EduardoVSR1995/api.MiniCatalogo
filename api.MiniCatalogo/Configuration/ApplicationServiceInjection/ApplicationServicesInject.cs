@@ -14,6 +14,9 @@ namespace api.MiniCatalogo.Configuration.ApplicationServiceInjection
 
             services.AddSingleton(provider =>
                 provider.GetRequiredService<IOptions<Config>>().Value);
+
+            services.AddTransient<SearchCategori>();
+            services.AddTransient<OperationCategori>();
         }
     }
 }
