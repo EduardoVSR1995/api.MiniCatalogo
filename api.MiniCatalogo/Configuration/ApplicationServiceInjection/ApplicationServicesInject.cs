@@ -17,6 +17,9 @@ namespace api.MiniCatalogo.Configuration.ApplicationServiceInjection
 
             services.AddTransient<SearchCategori>();
             services.AddTransient<OperationCategori>();
+            // injection product
+            services.AddTransient<SearchProduct>();
+            services.AddTransient<OperationProduct>();
         }
     }
 }
